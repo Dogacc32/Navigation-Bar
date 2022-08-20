@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.menu-bar{
+    background-color: #5b71b5;
+    text-align: center;
+    
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+
+}
+
+.menu-bar ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+    
+
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.anasayfa, .menu-bar ul li:hover{
+    background-color:thistle;
+    border-radius: 10px;
+}
+
+.menu-bar ul li:hover .altmenu{
+    display:block;
+    position: absolute;
+    margin-top: 20px;
+    background: #5b71b5;
+    margin-left: -20px;
+    font-size: 20px;
+    margin-top: 30px;
+    
+}
+
+.altmenu{
+    display: none;
+   
+}
+
+
+.menu-bar ul li:hover .altmenu ul{
+    display: block;
+}
